@@ -3,7 +3,7 @@ package com.nashtech.assignment;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.nashtech.assignment.entities.Account;
+import com.nashtech.assignment.entity.Account;
 
 @SpringBootApplication
 public class AssignmentApplication {
@@ -13,5 +13,4 @@ public class AssignmentApplication {
 		Account account = new Account();
 		account.getAccountID();
 	}
-
 }

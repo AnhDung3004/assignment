@@ -1,4 +1,4 @@
-package com.nashtech.assignment.entities;
+package com.nashtech.assignment.entity;
 
 import javax.persistence.*;
 
@@ -7,7 +7,7 @@ import lombok.*;
 import java.util.List;
 
 @Entity
-@Table
+@Table(name = "AccountRole")
 @Getter
 @Setter
 @ToString
@@ -16,9 +16,10 @@ import java.util.List;
 public class AccountRole {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "AccountRoleID")
 	private int accountRoleID;
 	
-	@Column(nullable = true, unique = false, length=50)
+	@Column(name = "AccountRoleName", nullable = true, unique = false, length=50)
 	private String accountRoleName;
 
 	@OneToMany(mappedBy = "accountRole")
