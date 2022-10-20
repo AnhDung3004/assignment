@@ -19,7 +19,10 @@ public class Discount {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "DiscountID")
 	private int discountID;
-	
+
+//	@Column(name = "DiscountName", nullable = true, unique = false)
+//	private String discountName;
+
 	@Column(name = "DiscountPercent", nullable = true, unique = false)
 	private int discountPercent;
 	
